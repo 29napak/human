@@ -1,0 +1,311 @@
+@use "../config/mixins" as mix;
+
+
+.contact{
+    padding: 63px 20px 61px;
+    background-color: #F3FAFD;
+    @include mix.ml(){
+        padding: 32px 18px;
+    }
+    &__inner{
+        background: #fff;
+        width: 1000px;
+        margin: 0 auto;
+        padding:  63px 0 45px 0;
+        @include mix.ml(){
+            width: inherit;
+            padding: 33px 10px 41px;
+            position: relative;
+        }
+        form{
+            margin: 0 auto;
+            margin-top: 71px;
+            @include mix.ml(){
+                margin-top: 50px;
+                position: relative;
+            }
+        }
+    }
+    .flex-rev{
+        width: 750px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        align-items: center;
+        @include mix.ml(){
+            width: inherit;
+            flex-direction: column;
+            align-items: flex-start;
+            width: inherit;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        &:nth-child(7){
+            align-items: baseline;
+        }
+        label{
+            font-size: 24px;
+            font-weight: 600;
+            color: #5AA3C3;
+            @include mix.ml(){
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        input{
+            width: 482px;
+            height: 60px;
+            border-radius: 3px;
+            border: 1.5px solid #8C8C8C;
+            color: #8C8C8C;
+            font-size: 16px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            @include mix.ml(){
+                width: 100%;
+                font-size: 14px;
+                padding-left: 10px;
+                
+            }
+        }
+        textarea{
+            width: 483px;
+            height: 205px;
+            border-radius: 3px;
+            border: 1.5px solid #8C8C8C;
+            color: #8C8C8C;
+            font-size: 16px;
+            padding: 20px;
+            box-sizing: border-box;
+            @include mix.ml(){
+                width: 100%;
+                font-size: 14px;
+                padding-left: 10px;
+                height: 239px;
+            }
+
+        }
+        select{
+            width: 486px;
+            height: 60px;
+            border-radius: 3px;
+            border: 1.5px solid #8C8C8C;
+            -webkit-appearance: none;
+            appearance: none; 
+            background-image: url(../images/arrow-down.svg);
+            background-position: right 39px center;
+            background-repeat: no-repeat;
+            background-size: 16px 24px;
+            color: #8C8C8C;
+            font-size: 16px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            @include mix.ml(){
+                width: 100%;
+                font-size: 14px;
+                padding-left: 10px;
+                background-position: right 14px top 16px;
+            }
+        }
+    }
+    &__button{
+        width: 574px;
+        height: 204px;
+        background-image: url(../images/bg-border.svg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 58px;
+        @include mix.ml(){
+            width: inherit;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 25px;
+            height: 167px;
+            background-image: url(../images/bg-border-sp.svg);
+        }
+        &__inner{
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+            align-items: center;
+            p{
+                font-size: 18px;
+                font-weight: 600;
+                color: #555555;
+                margin-bottom: 14px;
+                @include mix.ml(){
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        button{
+            width:501px ;
+            height: 80px;
+            background-color:#164A6F ;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border: none;
+            position: relative;
+         z-index: 1;
+
+            &:hover{
+                background-color: #5AA3C3;
+            }
+            @include mix.ml(){
+                width: inherit;
+                position: relative;
+                bottom: -16px;
+                padding: 0 20px;
+                align-items: center;
+            }
+            p{
+               font-size: 22px;
+               font-weight: 600; 
+               color: #fff;
+               position: relative;
+               top: -7px;
+               @include mix.ml(){
+                font-size: 16px;
+                margin-bottom: 0;
+                top: 0;
+               }
+               span{
+                   margin-left: 20px;
+                   position: relative;
+                   top: -5px; 
+                   @include mix.ml(){
+                       margin-left: 14px;
+                       img{
+                           width: 20px;
+                       }
+                   }
+                   
+               }
+            }
+        }
+    }
+    .memberDetail__dot04__inner img{
+        transform: rotate(90deg);
+        margin-left: 28px;
+        @include mix.ml(){
+            margin-left: -12px;
+        }
+    }
+    .memberDetail__dot04{
+        margin-top: -56px;
+        display: block;
+        @include mix.ml(){
+            display: block;
+            margin-top: -42px;
+            width: 178px;
+            height: 250px;
+            overflow: hidden;
+            z-index: 1;
+        }
+    }
+    .memberDetail__dot10{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        @include mix.ml(){
+            height: 73px;
+            left: unset;
+            margin-right: -24px;
+            margin-top: -304px;
+            overflow: hidden;
+            right: 0;
+            width: 39px;
+            z-index: 1;
+
+        }
+        &__inner{
+            width: 1080px;
+            bottom: 0;
+            display: flex;
+            position: absolute;
+            justify-content: flex-end;
+            margin-bottom: -70px;
+            margin-right: -320px;
+            @include mix.ml(){
+                width: inherit;
+                margin-right: 0;
+                right: 0;
+                
+            }
+
+        }
+    }
+
+   
+    .company__acess__title__inner h1{
+        margin-bottom: 5px;
+        @include mix.ml(){
+            margin-bottom: 0;
+        }
+    }
+    
+
+}
+.contactPage{
+    overflow: hidden;
+.company__title{
+    background-image: url(../images/photo-1.png);
+    background-position: center;
+}
+.company__title__inner h1 svg:nth-child(2){
+    margin-left: -17px;
+    width: 55px;
+    margin-top: 10px;
+
+}
+.company__title__inner{
+    margin-top: -8px;
+    h1{
+        margin-left: 0px;
+        margin-top: 3px;
+        
+        @include mix.ml(){
+            margin-left: -10px;
+            margin-top: 13px;
+        }
+        svg{
+            width: 72px;
+            @include mix.ml(){
+                width: 63px;
+            }
+        }
+    }
+    h2{
+        position: relative;
+        top: 0px;
+        @include  mix.ml(){
+            top: -7px;
+        }
+    }
+    h3{
+        position: relative;
+        top: 6px;
+        @include mix.ml(){
+            top: -7px;
+        }
+    }
+    
+}
+.company__title__inner h3{
+    position: relative;
+    bottom: -7px;
+}
+
+
+
+
+}

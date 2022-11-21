@@ -1,0 +1,205 @@
+@use "config/mixins" as mix;
+
+
+
+.p-hero{
+    background: #5AA3C3;
+    padding:70px 20px;
+    overflow: hidden;
+    @include mix.ml(){
+        padding: 26px 19px;
+        margin-top: 76px;
+    }
+    
+
+    &__dot02{
+        position: absolute;
+        top: 710px;
+        @include mix.ml(){
+            display: none;
+        }
+
+
+        &__inner{
+
+            margin: 0 auto;
+            img{
+                margin-left: -121px;
+                margin-top: 7px;
+            }
+        }
+
+    }
+    &__inner{
+        background: #72B7D4;
+        max-width: 1080px;
+        margin: 0 auto;
+        height: 656px;
+        display: flex;
+        justify-content: space-between; 
+        @include mix.ml(){
+            flex-direction: column;
+            height: 745px;
+            
+        }
+    }
+    &__copy{
+        margin-top: 98px;
+        margin-left: 40px;
+           @include mix.ml(){
+            margin-top: 25px;
+            margin-left: 13px;
+           }
+           h2{
+            color: #fff;
+        font-family: futura-pt,sans-serif;
+        font-size: 98px;
+        font-style: italic;
+        font-weight: 500;
+        letter-spacing: -2.7px;
+        line-height: 105px;
+        margin: 0;
+            @include mix.ml(){
+                font-size: 62px;
+                letter-spacing: -1.7px;
+                line-height: 67px;
+               }
+           }
+           p{
+               margin-top: 10px;
+               @include mix.ml(){
+                   margin-top: 7px;
+               }
+           }
+       
+    }
+
+    &__bottom{
+        width: 50vw;
+        position: absolute;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        z-index: 1;
+        margin-left: 40px;
+        gap: 10px;
+
+        @include mix.mq(){
+            width: calc(100vw - 38px);
+            margin: 0;
+            overflow: hidden;
+            height: 306px;
+            gap: 8px;
+        }
+        &__text01{
+            background-color: #fff;
+            padding: 8px 31px 8px 12px;
+            font-size: 22px;
+           
+            @include mix.mq(){
+                font-size: 17px;
+                white-space: nowrap;
+                padding: 7px 31px 7px 10px;
+            }
+            mark{
+                background-color: #fff;
+                color:#5AA3C3;
+            }
+        }
+        &__text02{
+            background-color: #fff;
+            padding: 8px 16px 8px 12px;
+            font-size: 22px;
+            @include mix.mq(){
+                font-size: 17px;
+                white-space: nowrap;
+                padding: 6px 12px 7px 10px;
+            }
+            mark{
+                background-color: #fff;
+                color:#5AA3C3;
+            }
+        }
+    }
+
+    &__img{
+        align-self: flex-end;
+        @include mix.ml(){
+            margin-top: 100px;
+            margin-right: -83px;
+            overflow: hidden;
+        }
+        &::before{
+            background-image: url(../images/dot-1.png);
+            content: "";
+            height: 323px;
+            margin-left: 33px;
+            margin-top: 4px;
+            position: absolute;
+            width: 478px;
+            z-index: 1;
+            @include mix.ml(){
+                top: 46%;
+                z-index: 0;
+                margin-left: 18px;
+            }
+            @include mix.ml(){
+                left: 0;
+                width: 225px;
+                height: 408px;
+            }
+        }
+        img{
+            vertical-align: bottom;
+            position: relative;
+            z-index: 2;
+            left: 10px;
+            @include mix.ml(){
+                width: 351px;
+            }
+        }
+    }
+    .side-text{
+        align-items: flex-end;
+        display: flex;
+        margin-bottom: -38px;
+        position: relative;
+        right: -24px;
+        @include mix.ml(){
+            position: absolute;
+            bottom: -148px;
+            margin-left: 0px;
+            img{
+                height: 324px;
+            }
+        }
+      
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
